@@ -1,4 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: tacos.HomeControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.119 s - in tacos.HomeControllerTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.697 s <<< FAILURE! - in tacos.HomeControllerTest
+testHomePage(tacos.HomeControllerTest)  Time elapsed: 1.602 s  <<< FAILURE!
+java.lang.AssertionError: 
+Response content
+Expected: a string containing "Welcome to..."
+     but: was "<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Taco Cloud</title>
+</head>
+<body>
+<h1>Welcome to Taco Cloud</h1>
+<img src="/images/TacoCloud.png" width="400"/>
+</body>
+</html>"
+	at tacos.HomeControllerTest.testHomePage(HomeControllerTest.java:26)
+
